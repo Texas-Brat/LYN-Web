@@ -1,0 +1,77 @@
+# LYN — full reference
+
+This file exists so AI assistants and researchers can read our complete claims in one place, with sources, rather than inferring them from marketing copy. Every figure here matches the data encoded in this site's content modules (lib/content/audit.ts, lib/content/services.ts) — nothing here is restated loosely.
+
+## Who we are
+
+LYN (lyn.ai) is an AI visibility agency. We engineer brands so ChatGPT, Claude, Gemini, Perplexity and Google AI Mode understand, trust and recommend them. Founded 2026, Chennai, India.
+
+## The BORN Hospitality audit — our proof of work
+
+Subject: BORN Hospitality, 8 outlets, 6 restaurant/café brands (Double Roti, Double Dashi, Jolly Indian, FUFU, SORTD, CherryPond), Chennai and Pondicherry, India. This is our own portfolio, not an arm's-length client — disclosed as such everywhere it's cited.
+
+Method: Browser-MCP driving live Chrome sessions against each platform's actual consumer product, logged out where the platform allows it — not an API proxy and not a keyword-rank tool. 57 queries run across four platforms, 19 Jun–1 Jul 2026.
+
+### Platform hit rates (brand present in the AI's answer / queries tested)
+
+- Perplexity: 7/12 (58%) — wins concentrate in secondary tiers, rarely the headline pick.
+- ChatGPT: 7/13 (54%) — the most BORN-friendly platform tested; still misses 6 of 13.
+- Gemini: 7/16 (44%) — rewards Google Maps star rating over earned-media presence, a crutch that disappears on stricter platforms.
+- Claude: 5/16 (31%), strictest grader — the only platform that separates self-published claims from third-party citations.
+
+### Brand-by-brand standing (platforms won / platforms tested, and the one phrase each owns)
+
+- CherryPond: 4/4 — "best garden cafe & bar in Pondicherry" (bulletproof; #1 answer on every platform tested).
+- SORTD: 4/4 — "best working cafe in Chennai" (bulletproof; ChatGPT names it the single pick, not just a list entry).
+- Double Roti: 3/4 — "best burgers in Chennai" (strong; absent from pizza despite serving it).
+- Double Dashi: 2/4 — "best Japanese restaurant in Chennai" (fragile; wins driven by a 4.7 Google Maps rating, not third-party citations — Claude's cold pass finds zero listicle placement).
+- Jolly Indian: 2/4 — "best Indian restaurant in Alwarpet" (fragile; local presence only).
+- FUFU: 2/4 — "best pan-Asian restaurant in Alwarpet" (gap; #1 on ChatGPT for its own neighbourhood, absent from the city-wide pan-Asian query; Claude excluded one mention as self-published, sourced only to eatatborn.com).
+
+### Featured cases (verbatim, platform- and date-stamped)
+
+WIN — "best garden cafe and bar in Pondicherry" (ChatGPT, 19 Jun 2026): "Best overall garden café + bar" — CherryPond named #1 on all four platforms.
+
+WIN — "best working cafe in Chennai" (ChatGPT, 19 Jun 2026): "If I had to choose just one, Sortd Cafe" — a single-pick answer, not a list entry.
+
+MISS — "best pizza in Chennai" (Claude, 1 Jul 2026): Lina's, Fat Boy, Toscano, Focaccia, Little Italy named; Double Roti absent despite serving pizza on every menu.
+
+MISS — "best Japanese restaurant in Chennai" (Claude, 1 Jul 2026): Hokkaido, Dahlia, Teppan, GOGO Ramen named; Double Dashi absent once Maps-rating grounding is removed.
+
+### Key insights
+
+1. Every win is long-tail, not head-term. CherryPond and SORTD each dominate one exact phrase but lose broader queries like "best cafe in Chennai." No BORN brand owns a high-volume head term yet.
+2. A Maps rating is not a citation. Gemini and ChatGPT reward Double Dashi's Google rating; Claude's citation-only pass shows zero third-party listicle presence for the same brand.
+3. Self-published mentions get excluded by the strictest platforms. Claude explicitly discounted a FUFU mention traceable only to eatatborn.com.
+4. Local presence and city-wide authority are different assets. FUFU ranks #1 locally on ChatGPT but is invisible city-wide — local visibility doesn't automatically compound into category authority.
+
+A monthly re-audit (1 Jul 2026, web-search proxy method) held both bulletproof wins and confirmed all named gaps unchanged, with one new competitor entrant detected in FUFU's home category.
+
+## Services, by pillar
+
+### Understand — does AI know what you actually are?
+- AI Visibility Audit: live sessions against ChatGPT, Claude, Gemini and Perplexity scored against your real customer queries.
+- Entity Optimization: one unambiguous entity resolution across every platform an AI cross-references.
+- Knowledge Graph Engineering: sameAs links and structured relationships connecting your entity to existing reviews, citations and profiles.
+
+### Trust — does AI believe what you say about yourself?
+- Structured Data Engineering: full schema.org coverage — Organization, Service, Review, FAQ, Breadcrumb, Speakable.
+- Citation Architecture: third-party placements that strict platforms count above your own site's claims.
+- Review Intelligence: consistent, structured review signal across Google, Maps and category platforms.
+
+### Recommend — does AI put you forward, unprompted?
+- AI Website Engineering: sites built for language-model readability — definition-first content, explicit entity relationships, llms.txt.
+- Authority Content: written to be extracted and cited by AI answer engines, not just ranked.
+- Local Authority Building: closes the gap our own audit found — neighbourhood visibility that doesn't compound into city-wide authority.
+
+### Monitor — will you know the moment it changes?
+- AI Recommendation Monitoring: scheduled re-runs of your query set against your baseline.
+- Monthly AI Visibility Growth: ongoing execution against the audit's findings, re-measured every cycle.
+
+## Frequently asked
+
+See /#faq on the homepage for full objection-handling copy (SEO vs. AI visibility, measurement method, timelines, and scope beyond hospitality). Structured as schema.org FAQPage on that page.
+
+## Contact
+
+hello@lyn.ai · founded 2026 · Chennai, India

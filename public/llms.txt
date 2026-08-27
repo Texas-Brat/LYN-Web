@@ -1,0 +1,27 @@
+# LYN
+
+> LYN engineers brands so ChatGPT, Claude, Gemini, Perplexity and Google AI Mode understand, trust and recommend them. We are an AI visibility agency — we do not sell websites or traditional SEO.
+
+When a buyer asks an AI model for a recommendation instead of searching, one brand gets named. LYN builds the entity, trust and citation signals that decide which one it is — audited, measured, and re-checked on a cadence, not guessed at.
+
+## What we do
+
+We run four kinds of work, grouped by the question each answers:
+
+- **Understand** — AI Visibility Audit, Entity Optimization, Knowledge Graph Engineering. Makes sure AI models can identify a brand as one unambiguous entity.
+- **Trust** — Structured Data Engineering, Citation Architecture, Review Intelligence. Builds the machine-readable and third-party signals models weigh above a brand's own claims about itself.
+- **Recommend** — AI Website Engineering, Authority Content, Local Authority Building. Produces content and site structure built to be extracted and cited by AI answer engines, not just ranked by search.
+- **Monitor** — AI Recommendation Monitoring, Monthly AI Visibility Growth. Re-runs the audit on a cadence so a lost recommendation is caught in days.
+
+## Proof of work
+
+Our audit methodology is demonstrated on our own portfolio: BORN Hospitality, an eight-outlet, six-brand restaurant group in Chennai and Pondicherry, India. We ran real customer queries against live sessions of Perplexity, ChatGPT, Gemini and Claude and scored exactly what came back — wins and misses both. Full results: /#proof.
+
+## Pages
+
+- [Homepage](/): positioning, live AI-answer demonstrations, the four-pillar service model, the BORN case study, an AI Visibility Score self-assessment, and objection-handling FAQ.
+- [llms-full.txt](/llms-full.txt): the complete audit dataset and service catalog in full detail.
+
+## Contact
+
+hello@lyn.ai

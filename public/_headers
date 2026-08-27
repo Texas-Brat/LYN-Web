@@ -1,0 +1,12 @@
+# Static export names the dynamic OG image route "opengraph-image" with no
+# file extension, so Netlify's CDN can't infer its content type from the
+# filename. Set it explicitly so link unfurling on social platforms works.
+/opengraph-image
+  Content-Type: image/png
+  Cache-Control: public, max-age=3600
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+
+/llms-full.txt
+  Content-Type: text/plain; charset=utf-8

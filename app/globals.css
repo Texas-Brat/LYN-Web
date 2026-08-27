@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+/* Tailwind v4 defaults `dark:` to a `prefers-color-scheme` media query,
+   which ignores next-themes' `data-theme` attribute entirely — every
+   `dark:` utility in the codebase would silently track the OS setting
+   instead of the in-app toggle. Rebind it to the attribute next-themes
+   actually manages so the toggle controls every `dark:` class, not just
+   the hand-written `[data-theme="dark"]` rules below. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* ------------------------------------------------------------------ */
+/* LYN design tokens                                                   */
+/* Warm cream ground / espresso ink, one muted-gold "signal" accent.   */
+/* Values mirror lib/brand.ts brandColors — keep both in sync.         */
+/* ------------------------------------------------------------------ */
+@theme {
+  --color-ink: #17130f;
+  --color-ink-soft: #28221b;
+  --color-ink-faint: #5c5548;
+  --color-paper: #f6f0e1;
+  --color-paper-dim: #ece1c8;
+  --color-signal: #c9a227;
+  --color-signal-ink: #1c1509;
+  --color-line: rgb(23 19 15 / 10%);
+  --color-line-dark: rgb(246 240 225 / 14%);
+
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-mono-plex), "SF Mono", monospace;
+
+  --shadow-soft: 0 20px 60px -24px rgb(23 19 15 / 0.25);
+  --shadow-signal: 0 12px 40px -12px rgb(201 162 39 / 0.35);
+
+  --animate-marquee: marquee 32s linear infinite;
+  --animate-pulse-slow: pulse-slow 3.6s ease-in-out infinite;
+  --animate-draw: draw 1.4s ease forwards;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes pulse-slow {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.55;
+    }
+  }
+  @keyframes draw {
+    from {
+      stroke-dashoffset: var(--draw-length, 1000);
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+:root {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  /* --color-ink-faint is tuned for contrast against the cream ground —
+     against near-black ink it needs to lighten. Every "muted text"
+     utility (text-ink-faint) reads this same custom property, so
+     overriding it here retints the whole site's secondary text for
+     dark mode with zero component changes. */
+  --color-ink-faint: #a79e8c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* A visible, deliberate cross-fade when the theme toggle changes
+   data-theme — not just an instant colour swap. Scoped to colour-only
+   properties so it never fights layout or the motion-library transitions
+   already declared on individual components (those are more specific
+   Tailwind utility classes and win over this element-selector default). */
+*,
+*::before,
+*::after {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 0.35s;
+  transition-timing-function: ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+:root[data-theme="dark"] body {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+::selection {
+  background: var(--color-signal);
+  color: var(--color-signal-ink);
+}
+
+/* Visible, brand-consistent focus ring for every interactive element. */
+:focus-visible {
+  outline: 2px solid var(--color-signal-ink);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+:root[data-theme="dark"] :focus-visible {
+  outline-color: var(--color-signal);
+}
